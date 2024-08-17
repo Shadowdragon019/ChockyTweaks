@@ -8,6 +8,4 @@ import org.slf4j.Logger;
 public class ChockyTweaks {
     public static final String modId = "chocky_tweaks";
     private static final Logger logger = LogUtils.getLogger();
-
-    public ChockyTweaks() {}
 }

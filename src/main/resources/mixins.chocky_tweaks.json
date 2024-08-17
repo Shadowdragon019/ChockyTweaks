@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.roxxane.chocky_tweaks.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mixins.chocky_tweaks.refmap.json",
+  "client": [
+    "BossMusicMixin",
+    "SkiesMusicTickerMixin"
+  ]
+}
