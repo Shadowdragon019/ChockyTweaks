@@ -5,11 +5,12 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(SkiesMusicTicker.class)
-abstract class SkiesMusicTickerMixin {
+public class SkiesMusicTickerMixin {
     /**
      * @author Roxxane
-     * @reason Nuke Blue Skies music
+     * @reason Stop ambient biome music from playing
      */
-    @Overwrite
-    public void tick() {}
+    @Overwrite(remap = false)
+    public void playMusic(SkiesMusicTicker.TrackType requestedMusicType) {}
+
 }
